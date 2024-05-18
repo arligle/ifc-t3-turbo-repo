@@ -13,7 +13,9 @@
   ],
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["tv\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["tw=\"([^\"]*)\""]
   ],
   "tailwindCSS.experimental.configFile": "./tooling/tailwind/web.ts",
   "typescript.enablePromptUseWorkspaceTsdk": true,
@@ -21,5 +23,21 @@
     "next/router.d.ts",
     "next/dist/client/router.d.ts"
   ],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "tsEssentialPlugins.fixSuggestionsSorting": true,
+  "search.exclude": {
+    "**/node_modules": false,
+    "**/node_modulesDISABLE": true
+  },
+  "tsEssentialPlugins.globalLibCompletions.action": "mark",
+  "tsEssentialPlugins.patchOutline": true,
+  "tsEssentialPlugins.outline.arraysTuplesNumberedItems": true,
+  "tsEssentialPlugins.renameImportNameOfFileRename": true,
+  "tsEssentialPlugins.signatureHelp.excludeBlockScope": true,
+  "tsEssentialPlugins.skipNodeModulesReferences": true,
+  "tsEssentialPlugins.suggestions.localityBonus": true,
+  "tsEssentialPlugins.tupleHelpSignature": true,
+  "tsEssentialPlugins.jsxEmmet.modernize": true,
+  "cSpell.enabled": true,
+  "cSpell.words": ["lucide"]
 }

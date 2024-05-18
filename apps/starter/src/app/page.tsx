@@ -3,7 +3,7 @@ import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
 
 import { Button, buttonVariants } from "@acme/ui/button";
 
-import MaxWidthWrapper from "~/components/MaxWidthWrapper";
+import { MaxWidthWrapper } from "~/components/max-width-wrapper";
 
 const perks = [
   {

@@ -1,11 +1,11 @@
 import type { Viewport } from "next";
 
 import { cn } from "@acme/ui";
-import { ThemeProvider, ThemeToggle } from "@acme/ui/theme";
 import { Toaster } from "@acme/ui/toast";
 
 import "~/styles/globals.css";
 
+import { Nav } from "~/components/nav";
 import { constructMetadata } from "~/lib/utils";
 import { fontSans } from "~/lib/utils/fonts";
 
@@ -32,13 +32,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.className,
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <div className="flex min-h-screen flex-col justify-between bg-gray-50">
+          <Nav />
           {children}
-          <div className="absolute bottom-4 right-4">
-            <ThemeToggle />
-          </div>
+
           <Toaster />
-        </ThemeProvider>
+        </div>
       </body>
     </html>
   );
