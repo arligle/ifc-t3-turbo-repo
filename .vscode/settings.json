@@ -40,11 +40,22 @@
   "tsEssentialPlugins.jsxEmmet.modernize": true,
   "cSpell.enabled": true,
   "cSpell.words": [
+    "automerge",
     "commitlint",
+    "datasources",
     "Headbar",
+    "ianvs",
+    "jenseng",
     "lucide",
+    "nextjs",
     "Supabase",
+    "superjson",
+    "tailwindcss",
     "Topbar",
+    "topo",
+    "trpc",
+    "tsbuildinfo",
+    "tseslint",
     "typecheck"
   ]
 }

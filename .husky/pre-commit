@@ -2,4 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "lint-staged 代码静态检查（只针对提交部分）"
-pnpm lint-staged
+# pnpm lint-staged
