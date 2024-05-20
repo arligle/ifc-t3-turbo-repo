@@ -1,5 +1,5 @@
 {
-  "name": "create-t3-turbo",
+  "name": "ifc-t3-turbo-repo",
   "private": true,
   "engines": {
     "node": ">=20.12.0"

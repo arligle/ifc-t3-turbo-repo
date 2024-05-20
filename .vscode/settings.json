@@ -39,5 +39,12 @@
   "tsEssentialPlugins.tupleHelpSignature": true,
   "tsEssentialPlugins.jsxEmmet.modernize": true,
   "cSpell.enabled": true,
-  "cSpell.words": ["lucide"]
+  "cSpell.words": [
+    "commitlint",
+    "Headbar",
+    "lucide",
+    "Supabase",
+    "Topbar",
+    "typecheck"
+  ]
 }

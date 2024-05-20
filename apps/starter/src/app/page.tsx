@@ -3,7 +3,7 @@ import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
 
 import { Button, buttonVariants } from "@acme/ui/button";
 
-import { MaxWidthWrapper } from "~/components/max-width-wrapper";
+import { MaxWidthWrapper } from "~/components/layouts/max-width-wrapper";
 
 const perks = [
   {
@@ -32,18 +32,17 @@ export default function Home() {
       <MaxWidthWrapper>
         <div className="mx-auto flex max-w-3xl flex-col items-center py-20 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Your marketplace for high-quality{" "}
-            <span className="text-blue-600">digital assets</span>.
+            营销从产品信息管理开始！{"                 "}
+            <span className="text-blue-600">从内容管理到数字资产管理</span>
           </h1>
           <p className="mt-6 max-w-prose text-lg text-muted-foreground">
-            Welcome to DigitalHippo. Every asset on our platform is verified by
-            our team to ensure our highest quality standards.
+            欢迎使用产品信息管理系统，这是一个产品信息管理系统的示例页面，您可以在这里查看产品信息，添加产品信息，编辑产品信息，删除产品信息等操作。
           </p>
           <div className="mt-6 flex flex-col gap-4 sm:flex-row">
             <Link href="/products" className={buttonVariants()}>
-              Browse Trending
+              Payload CMS
             </Link>
-            <Button variant="ghost">Our quality promise &rarr;</Button>
+            <Button variant="ghost">Supabase &rarr;</Button>
           </div>
         </div>
       </MaxWidthWrapper>

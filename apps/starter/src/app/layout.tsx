@@ -5,7 +5,9 @@ import { Toaster } from "@acme/ui/toast";
 
 import "~/styles/globals.css";
 
-import { Nav } from "~/components/nav";
+import { Background } from "~/components/layouts/background";
+import { Topbar } from "~/components/layouts/topbar";
+import Navbar from "~/components/nav/navbar";
 import { constructMetadata } from "~/lib/utils";
 import { fontSans } from "~/lib/utils/fonts";
 
@@ -32,8 +34,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.className,
         )}
       >
-        <div className="flex min-h-screen flex-col justify-between bg-gray-50">
-          <Nav />
+        <Background />
+        <div className="flex min-h-screen flex-col justify-between">
+          <Topbar>
+            <Navbar />
+          </Topbar>
           {children}
 
           <Toaster />
