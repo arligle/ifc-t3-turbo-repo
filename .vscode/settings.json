@@ -56,6 +56,7 @@
     "trpc",
     "tsbuildinfo",
     "tseslint",
-    "typecheck"
+    "typecheck",
+    "unauthed"
   ]
 }
