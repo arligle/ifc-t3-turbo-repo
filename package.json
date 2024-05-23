@@ -17,6 +17,7 @@
     "lint": "turbo lint",
     "lint:fix": "turbo lint --continue -- --fix",
     "lint:ws": "pnpm dlx sherif@latest",
+    "lint:ws-fix": "pnpm dlx sherif@latest --fix",
     "postinstall": "pnpm lint:ws",
     "typecheck": "turbo typecheck",
     "ui-add": "pnpm -F ui ui-add",
