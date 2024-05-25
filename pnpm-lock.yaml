@@ -205,9 +205,9 @@ importers:
       '@acme/auth':
         specifier: workspace:*
         version: link:../../packages/auth
-      '@acme/drizzle-postgres':
+      '@acme/db':
         specifier: workspace:*
-        version: link:../../packages/drizzle
+        version: link:../../packages/db
       '@acme/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -363,9 +363,9 @@ importers:
       '@acme/auth':
         specifier: workspace:*
         version: link:../../packages/auth
-      '@acme/drizzle-postgres':
+      '@acme/db':
         specifier: workspace:*
-        version: link:../../packages/drizzle
+        version: link:../../packages/db
       '@acme/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -469,9 +469,9 @@ importers:
       '@acme/auth':
         specifier: workspace:*
         version: link:../auth
-      '@acme/drizzle-postgres':
+      '@acme/db':
         specifier: workspace:*
-        version: link:../drizzle
+        version: link:../db
       '@acme/validators':
         specifier: workspace:*
         version: link:../validators
@@ -506,11 +506,11 @@ importers:
 
   packages/auth:
     dependencies:
-      '@acme/drizzle-postgres':
+      '@acme/db':
         specifier: workspace:*
-        version: link:../drizzle
+        version: link:../db
       '@auth/drizzle-adapter':
-        specifier: latest
+        specifier: ^1.1.0
         version: 1.1.0
       '@t3-oss/env-nextjs':
         specifier: ^0.10.1
@@ -550,7 +550,50 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
 
-  packages/drizzle:
+  packages/db:
+    dependencies:
+      '@t3-oss/env-core':
+        specifier: ^0.10.1
+        version: 0.10.1(typescript@5.4.5)(zod@3.23.8)
+      '@vercel/postgres':
+        specifier: ^0.8.0
+        version: 0.8.0
+      drizzle-orm:
+        specifier: ^0.30.10
+        version: 0.30.10(@libsql/client@0.5.6)(@neondatabase/serverless@0.7.2)(@planetscale/database@1.18.0)(@types/pg@8.11.6)(@types/react@18.3.2)(@vercel/postgres@0.8.0)(mysql2@3.9.7)(pg@8.11.5)(postgres@3.4.4)(react@18.3.1)
+      drizzle-zod:
+        specifier: ^0.5.1
+        version: 0.5.1(drizzle-orm@0.30.10(@libsql/client@0.5.6)(@neondatabase/serverless@0.7.2)(@planetscale/database@1.18.0)(@types/pg@8.11.6)(@types/react@18.3.2)(@vercel/postgres@0.8.0)(mysql2@3.9.7)(pg@8.11.5)(postgres@3.4.4)(react@18.3.1))(zod@3.23.8)
+      zod:
+        specifier: ^3.23.8
+        version: 3.23.8
+    devDependencies:
+      '@acme/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint
+      '@acme/prettier-config':
+        specifier: workspace:*
+        version: link:../../tooling/prettier
+      '@acme/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/typescript
+      dotenv-cli:
+        specifier: ^7.4.2
+        version: 7.4.2
+      drizzle-kit:
+        specifier: ^0.21.1
+        version: 0.21.4
+      eslint:
+        specifier: ^9.2.0
+        version: 9.2.0
+      prettier:
+        specifier: ^3.2.5
+        version: 3.2.5
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+
+  packages/drizzle-node-postgres:
     dependencies:
       '@t3-oss/env-core':
         specifier: ^0.10.1

@@ -1,9 +1,9 @@
 import type { DefaultSession, NextAuthConfig } from "next-auth";
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
-import Github from "next-auth/providers/github";
+import Discord from "next-auth/providers/discord";
 
-import { db } from "@acme/drizzle-postgres/client";
-import { Account, Session, User } from "../../drizzle/src/schema";
+import { db } from "@acme/db/client";
+import { Account, Session, User } from "@acme/db/schema";
 
 declare module "next-auth" {
   interface Session {
@@ -19,7 +19,7 @@ export const authConfig = {
     accountsTable: Account,
     sessionsTable: Session,
   }),
-  providers: [Github],
+  providers: [Discord],
   callbacks: {
     session: (opts) => {
       if (!("user" in opts)) throw "unreachable with session strategy";

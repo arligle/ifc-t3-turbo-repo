@@ -11,12 +11,12 @@
     "lint": "eslint",
     "start": "pnpm with-env next start",
     "typecheck": "tsc --noEmit",
-    "with-env": "dotenv -e ../../.env --"
+    "with-env": "dotenv -e ./.env --"
   },
   "dependencies": {
     "@acme/api": "workspace:*",
     "@acme/auth": "workspace:*",
-    "@acme/drizzle-postgres": "workspace:*",
+    "@acme/db": "workspace:*",
     "@acme/ui": "workspace:*",
     "@acme/utils": "workspace:*",
     "@acme/validators": "workspace:*",
