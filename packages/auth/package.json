@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@acme/drizzle-postgres": "workspace:*",
-    "@auth/drizzle-adapter": "^1.1.0",
+    "@auth/drizzle-adapter": "latest",
     "@t3-oss/env-nextjs": "^0.10.1",
     "next": "^14.2.3",
     "next-auth": "5.0.0-beta.18",
